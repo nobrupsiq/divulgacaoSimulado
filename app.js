@@ -1,6 +1,7 @@
-const whatsappNumber = '5521999999999';
+const whatsappNumber = '+5521971699008';
 const whatsappMessage = 'Quero garantir o Simulado ACE por R$ 69,90! Pode me enviar a chave PIX?';
-const whatsappLink = `https://wa.me/${whatsappNumber}?text=${encodeURIComponent(whatsappMessage)}`;
+const whatsappDigits = whatsappNumber.replace(/\D/g, '');
+const whatsappLink = `https://wa.me/${whatsappDigits}?text=${encodeURIComponent(whatsappMessage)}`;
 
 const yearSpan = document.getElementById('ano');
 if (yearSpan) {
