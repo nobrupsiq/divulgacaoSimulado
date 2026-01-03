@@ -1,0 +1,255 @@
+:root {
+  color-scheme: dark;
+  font-family: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  position: relative;
+  overflow-x: hidden;
+}
+
+.noise-overlay {
+  position: fixed;
+  inset: 0;
+  background-image: url("https://www.transparenttextures.com/patterns/asfalt-dark.png");
+  opacity: 0.08;
+  pointer-events: none;
+  z-index: -1;
+}
+
+.glow {
+  position: absolute;
+  filter: blur(180px);
+  z-index: -1;
+  opacity: 0.6;
+}
+
+.glow-one {
+  width: 480px;
+  height: 480px;
+  top: 10%;
+  left: -10%;
+  background: radial-gradient(circle, rgba(79, 70, 229, 0.4), transparent 60%);
+}
+
+.glow-two {
+  width: 520px;
+  height: 520px;
+  bottom: -5%;
+  right: -10%;
+  background: radial-gradient(circle, rgba(16, 185, 129, 0.35), transparent 60%);
+}
+
+.cta-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  border-radius: 999px;
+  padding: 0.85rem 1.8rem;
+  font-weight: 600;
+  background: linear-gradient(120deg, #6366f1, #22d3ee);
+  color: #0f172a;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+  box-shadow: 0 20px 40px rgba(34, 211, 238, 0.35);
+}
+
+.cta-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 25px 50px rgba(99, 102, 241, 0.45);
+}
+
+.cta-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 999px;
+  padding: 0.85rem 1.8rem;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #e2e8f0;
+  transition: border-color 0.25s ease, color 0.25s ease;
+}
+
+.cta-secondary:hover {
+  border-color: rgba(94, 234, 212, 0.6);
+  color: #a5f3fc;
+}
+
+.spotlight {
+  position: absolute;
+  inset: 0;
+  border-radius: 32px;
+  background: radial-gradient(circle at 30% 20%, rgba(99, 102, 241, 0.4), transparent 55%),
+    radial-gradient(circle at 70% 0%, rgba(14, 165, 233, 0.3), transparent 60%);
+  opacity: 0.8;
+}
+
+.mockup-card {
+  border-radius: 32px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.85);
+  padding: 1.5rem;
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.55);
+}
+
+.mockup-card img {
+  width: 100%;
+  border-radius: 24px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: #020617;
+}
+
+.mockup-card figcaption {
+  margin-top: 1rem;
+  font-size: 0.95rem;
+  color: #cbd5f5;
+}
+
+.feature-card {
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  background: radial-gradient(circle at 20% 20%, rgba(99, 102, 241, 0.15), transparent 55%), rgba(2, 6, 23, 0.8);
+  padding: 1.75rem;
+  box-shadow: 0 20px 50px rgba(2, 6, 23, 0.6);
+}
+
+.feature-card h4 {
+  font-size: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.step-index {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 999px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.3), rgba(14, 165, 233, 0.3));
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  color: #f8fafc;
+}
+
+.faq-item {
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.7);
+  padding: 1rem 1.25rem;
+}
+
+.faq-item summary {
+  cursor: pointer;
+  font-weight: 600;
+  list-style: none;
+}
+
+.faq-item summary::-webkit-details-marker {
+  display: none;
+}
+
+.faq-item[open] {
+  border-color: rgba(34, 211, 238, 0.4);
+}
+
+.testimonial-carousel {
+  position: relative;
+  margin-top: 1.5rem;
+  width: 100%;
+  overflow: hidden;
+  padding-bottom: 2rem;
+}
+
+.testimonial-marquee {
+  width: 100%;
+  overflow: hidden;
+  cursor: grab;
+  user-select: none;
+}
+
+.testimonial-marquee.is-dragging {
+  cursor: grabbing;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  will-change: transform;
+}
+
+.testimonial-card {
+  flex: 0 0 clamp(240px, 60vw, 360px);
+  border-radius: 28px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  background: rgba(15, 23, 42, 0.85);
+  padding: 1.75rem;
+  box-shadow: 0 20px 45px rgba(2, 6, 23, 0.5);
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.testimonial-card blockquote {
+  font-size: 1.05rem;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+.testimonial-card figcaption {
+  margin-top: 1.25rem;
+  font-size: 0.9rem;
+  color: #a5b4fc;
+}
+
+.carousel-fade {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 80px;
+  pointer-events: none;
+  z-index: 5;
+}
+
+.carousel-fade-left {
+  left: 0;
+  background: linear-gradient(90deg, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0));
+}
+
+.carousel-fade-right {
+  right: 0;
+  background: linear-gradient(270deg, rgba(2, 6, 23, 0.95), rgba(2, 6, 23, 0));
+}
+
+.whatsapp-fab {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  border-radius: 999px;
+  padding: 1rem;
+  background: linear-gradient(135deg, #22d3ee, #2dd4bf);
+  color: #0f172a;
+  box-shadow: 0 25px 50px rgba(34, 211, 238, 0.45);
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease;
+}
+
+.whatsapp-fab:hover {
+  transform: translateY(-3px) scale(1.02);
+}
+
+@media (max-width: 640px) {
+  .cta-primary,
+  .cta-secondary {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .whatsapp-fab {
+    right: 16px;
+    bottom: 16px;
+  }
+}

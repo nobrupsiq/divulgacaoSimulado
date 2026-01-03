@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Divulgação | Simulado ACE Saquarema</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            display: ['"Space Grotesk"', 'ui-sans-serif', 'system-ui', 'sans-serif'],
+          },
+          colors: {
+            oce: {
+              dark: '#040816',
+              mid: '#0f172a',
+              accent: '#6366f1',
+              glow: '#22d3ee',
+            },
+          },
+          boxShadow: {
+            glass: '0 25px 60px rgba(15, 23, 42, 0.6)',
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="min-h-screen bg-slate-950 text-slate-100 font-display">
+  <div class="noise-overlay" aria-hidden="true"></div>
+  <div class="glow glow-one" aria-hidden="true"></div>
+  <div class="glow glow-two" aria-hidden="true"></div>
+
+  <header class="relative border-b border-white/5 bg-slate-950/80 backdrop-blur-lg">
+    <div class="max-w-6xl mx-auto px-6 py-6 flex flex-col gap-3 md:flex-row md:items-center md:justify-between">
+      <div>
+        <p class="text-xs uppercase tracking-[0.4em] text-cyan-200">ACE Saquarema</p>
+        <h1 class="text-2xl font-semibold">Simulado Premium de Endemias</h1>
+      </div>
+      <div class="flex items-center gap-3 text-sm text-slate-300">
+        <span class="inline-flex items-center gap-2 rounded-full border border-white/10 px-3 py-1">
+          <span class="h-2 w-2 rounded-full bg-emerald-400 animate-pulse"></span>
+          Atualizado para IBAM 2025
+        </span>
+        <button id="btn-alert" class="rounded-full border border-white/10 px-4 py-2 text-white hover:border-cyan-300 transition" type="button">
+          Ver questão exemplo
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <main class="relative overflow-hidden">
+    <section class="max-w-6xl mx-auto px-6 py-16 grid gap-12 lg:grid-cols-[1.05fr_0.95fr] items-center">
+      <div class="space-y-8">
+        <div class="inline-flex items-center gap-2 rounded-full border border-white/10 bg-white/5 px-4 py-1 text-xs uppercase tracking-[0.4em] text-cyan-200">
+          Oferta de Lançamento
+          <span class="text-slate-400 tracking-normal font-normal">por tempo limitado</span>
+        </div>
+        <div>
+          <p class="text-sm text-indigo-200">Treine antes da concorrência.</p>
+          <h2 class="mt-3 text-4xl sm:text-5xl font-semibold leading-tight">As mesmas questões que os aprovados já estão resolvendo, agora a <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-400 via-cyan-300 to-emerald-300">apenas R$ 69,90</span>.</h2>
+          <div class="mt-4 inline-flex flex-wrap items-baseline gap-3 text-lg">
+            <span class="text-slate-500 line-through">De R$ 129,90</span>
+            <span class="inline-flex items-center gap-2 rounded-full border border-emerald-300/50 bg-emerald-300/10 px-3 py-1 text-emerald-100 font-semibold">
+              por R$ 69,90
+              <span class="text-xs uppercase tracking-[0.3em] text-emerald-200">lote atual</span>
+            </span>
+          </div>
+          <p class="mt-4 text-lg text-slate-300">Menos do que um combo de fast-food e infinitamente mais valioso: simulados organizados por bloco, feedback imediato e acesso exclusivo liberado após o PIX cair.</p>
+        </div>
+        <div class="grid gap-4 sm:grid-cols-2">
+          <div class="rounded-2xl border border-white/10 bg-slate-900/80 p-5 shadow-glass">
+            <p class="text-sm text-slate-400">+ de</p>
+            <p class="text-4xl font-semibold text-white">480</p>
+            <p class="text-slate-300">Questões comentadas</p>
+          </div>
+          <div class="rounded-2xl border border-white/10 bg-slate-900/80 p-5 shadow-glass">
+            <p class="text-sm text-slate-400">Inclui</p>
+            <p class="text-4xl font-semibold text-white">6</p>
+            <p class="text-slate-300">Blocos essenciais IBAM</p>
+          </div>
+        </div>
+        <div class="flex flex-wrap gap-4">
+          <a data-whatsapp href="#" class="cta-primary" aria-label="Entrar em contato pelo WhatsApp">
+            Falar no WhatsApp
+            <span aria-hidden="true">→</span>
+          </a>
+          <button data-scroll="#demonstração" class="cta-secondary" type="button">Ver o simulador em ação</button>
+        </div>
+        <p class="text-sm text-slate-400">Pagamento direto comigo. Recebe o PIX, manda o comprovante e te libero o acesso com usuário e senha personalizados.</p>
+      </div>
+      <div class="relative">
+        <div class="spotlight" aria-hidden="true"></div>
+        <div class="rounded-[32px] border border-white/10 bg-slate-900/70 shadow-glass backdrop-blur-xl overflow-hidden">
+          <div class="border-b border-white/5 px-6 py-4 flex items-center justify-between text-sm text-slate-300">
+            <span>Simulado ACE</span>
+            <span class="rounded-full border border-emerald-400/30 px-3 py-1 text-emerald-200 text-xs">Online 24/7</span>
+          </div>
+          <div class="p-6 space-y-4">
+            <div>
+              <p class="text-slate-400">Investimento único</p>
+              <div class="flex items-baseline gap-3 mt-1">
+                <p class="text-slate-500 line-through">R$ 129,90</p>
+                <p class="text-3xl font-semibold text-white">R$ 69,90</p>
+              </div>
+            </div>
+            <ul class="space-y-3 text-sm text-slate-300">
+              <li class="flex items-center gap-2"><span class="text-indigo-300">▹</span>Questões atualizadas para o edital de Saquarema</li>
+              <li class="flex items-center gap-2"><span class="text-indigo-300">▹</span>Feedback com justificativa oficial</li>
+              <li class="flex items-center gap-2"><span class="text-indigo-300">▹</span>Acesso ilimitado via navegador</li>
+              <li class="flex items-center gap-2"><span class="text-indigo-300">▹</span>Suporte direto comigo no WhatsApp</li>
+            </ul>
+            <div class="mt-6 rounded-2xl border border-amber-200/40 bg-amber-100/10 p-5 text-sm text-amber-100">
+              Muito mais barato que um lanche do shopping e ainda te aproxima da nomeação.
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="demonstração" class="bg-slate-950/60 border-y border-white/5">
+      <div class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+        <div class="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
+          <div>
+            <p class="text-sm uppercase tracking-[0.4em] text-indigo-200">100% prático</p>
+            <h3 class="mt-3 text-3xl font-semibold">Veja algumas telas reais do simulador</h3>
+            <p class="mt-3 text-slate-300">Você navega pelos blocos, escolhe a lei, responde e recebe a correção na hora. Tudo igual ao ambiente final.</p>
+          </div>
+          <button id="btn-galeria" class="inline-flex items-center gap-2 text-sm text-cyan-300 hover:text-white transition" type="button">
+            Abrir galeria em tela cheia
+            <span aria-hidden="true">↗</span>
+          </button>
+        </div>
+        <div class="grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          <figure class="mockup-card">
+            <img src="assets/dashboard.png" alt="Dashboard com blocos liberados e progresso do simulador" loading="lazy">
+            <figcaption>
+              Visualize os blocos ativos, progresso geral e avisos do simulador em tempo real.
+            </figcaption>
+          </figure>
+          <figure class="mockup-card">
+            <img src="assets/login.png" alt="Tela de login com campos de usuário e senha" loading="lazy">
+            <figcaption>
+              Recebe usuário e senha exclusivos para entrar no ambiente seguro e acompanhar suas tentativas.
+            </figcaption>
+          </figure>
+          <figure class="mockup-card">
+            <img src="assets/perguntas.png" alt="Tela de perguntas com alternativas destacadas" loading="lazy">
+            <figcaption>
+              Resolva as questões com feedback imediato e contador de tentativas para medir evolução.
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto px-6 py-16 space-y-10">
+      <div class="grid gap-6 md:grid-cols-3">
+        <article class="feature-card">
+          <h4>Conteúdo certeiro</h4>
+          <p>Questões das leis 11.350, 8.080, 8.142, biossegurança e Saquarema. Direto ao ponto do edital.</p>
+        </article>
+        <article class="feature-card">
+          <h4>Simulado infinito</h4>
+          <p>Pode refazer quantas vezes quiser. As questões embaralham e a experiência continua fluida.</p>
+        </article>
+        <article class="feature-card">
+          <h4>Feedback humano</h4>
+          <p>Errou? O comentário aparece na hora para ajustar o estudo sem perder tempo.</p>
+        </article>
+      </div>
+      <div class="grid gap-10 lg:grid-cols-[1.1fr_0.9fr]">
+        <div class="rounded-3xl border border-white/5 bg-gradient-to-br from-slate-900/80 via-slate-900/40 to-slate-900/80 p-8 shadow-glass">
+          <p class="text-sm uppercase tracking-[0.4em] text-emerald-200">Como funciona</p>
+          <h3 class="mt-4 text-3xl font-semibold">Em 3 passos você está treinando</h3>
+          <ol class="mt-6 space-y-5 text-slate-300">
+            <li class="flex gap-4">
+              <span class="step-index">1</span>
+              <div>
+                <strong class="text-white">Chama no WhatsApp</strong>
+                <p>Eu respondo rápido, envio a chave PIX e tiro dúvidas.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="step-index">2</span>
+              <div>
+                <strong class="text-white">Pagou, caiu</strong>
+                <p>Assim que o PIX confirma, libero usuário e senha exclusivos.</p>
+              </div>
+            </li>
+            <li class="flex gap-4">
+              <span class="step-index">3</span>
+              <div>
+                <strong class="text-white">Estuda sem limite</strong>
+                <p>Acesso imediato via navegador (celular ou notebook) com suporte direto comigo.</p>
+              </div>
+            </li>
+          </ol>
+        </div>
+        <div class="rounded-3xl border border-indigo-400/30 bg-slate-900/70 p-8 shadow-glass">
+          <p class="text-sm uppercase tracking-[0.4em] text-indigo-200">Por que agora?</p>
+          <h3 class="mt-4 text-3xl font-semibold">A concorrência já descobriu</h3>
+          <ul class="mt-6 space-y-4 text-slate-300">
+            <li class="flex gap-3">
+              <span class="text-indigo-300">★</span>
+              Entrega imediata e suporte pessoal.
+            </li>
+            <li class="flex gap-3">
+              <span class="text-indigo-300">★</span>
+              Único simulado focado em Saquarema + IBAM 2025.
+            </li>
+            <li class="flex gap-3">
+              <span class="text-indigo-300">★</span>
+              Menor investimento entre cursos completos do nicho.
+            </li>
+          </ul>
+          <a data-whatsapp href="#" class="cta-primary mt-8 w-full justify-center" aria-label="Entrar em contato pelo WhatsApp">
+            Quero garantir agora
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="bg-slate-950/60 border-y border-white/5">
+      <div class="max-w-6xl mx-auto px-6 py-16 space-y-12">
+        <div class="space-y-3">
+          <p class="text-sm uppercase tracking-[0.4em] text-emerald-200">Depoimentos</p>
+          <h3 class="text-3xl font-semibold">Quem já treinou antes do edital abrir</h3>
+          <p class="text-slate-300">Prova social real de quem destravou o estudo com o simulador premium.</p>
+        </div>
+        <div class="testimonial-carousel">
+          <div class="testimonial-marquee" data-testimonial-marquee>
+            <div class="marquee-track" data-testimonial-track>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "As questões são iguais às que caíram no simulado da prefeitura. Acertei meus pontos fracos em biossegurança e legislação. Melhor R$ 69,90 que já paguei."
+                </blockquote>
+                <figcaption>Camila Silva • ACE aprovada em 2024</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "Comecei sem base nenhuma de legislação, mas os blocos já vêm organizados e deu para revisar tudo em dois fins de semana. Saí do zero para 80%."
+                </blockquote>
+                <figcaption>Bianca Souza • Em preparação para IBAM 2025</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "O simulador força a pensar rápido. Faço no celular durante os plantões e ainda recebo o feedback na hora para anotar no caderno."
+                </blockquote>
+                <figcaption>Carlos Menezes • ACE efetivo em Maricá</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "Paguei o PIX e em menos de 10 minutos já estava com login, senha e tutorial. Atendimento humano de verdade, sem robozinho."
+                </blockquote>
+                <figcaption>Dani Rocha • Estudante focada em Saquarema</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "Uso como aquecimento antes da leitura da lei. As questões comentadas cortaram muito tempo perdido com resumo infinito."
+                </blockquote>
+                <figcaption>Everton Braga • ACS migrando para ACE</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "Meu grupo de estudo inteiro entrou pelo mesmo link. Agora a gente compara desempenho pelo dashboard e ninguém fica para trás."
+                </blockquote>
+                <figcaption>Luana Ribeiro • Grupo Estuda ACE</figcaption>
+              </figure>
+              <figure class="testimonial-card">
+                <blockquote>
+                  "Já tinha comprado apostila cara e não estava rendendo. Aqui é responder, errar, entender e repetir. Simples e direto."
+                </blockquote>
+                <figcaption>Mauro Lima • Concursando desde 2022</figcaption>
+              </figure>
+            </div>
+          </div>
+          <div class="carousel-fade carousel-fade-left" aria-hidden="true"></div>
+          <div class="carousel-fade carousel-fade-right" aria-hidden="true"></div>
+        </div>
+        <div>
+          <p class="text-sm uppercase tracking-[0.4em] text-indigo-200">FAQ rápido</p>
+          <div class="mt-4 space-y-4">
+            <details class="faq-item" open>
+              <summary>O acesso é vitalício?</summary>
+              <p>Sim. Pagou uma vez, usa enquanto o concurso estiver ativo e ainda recebe atualizações futuras do banco de questões.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Funciona no celular?</summary>
+              <p>O simulador é responsivo e roda em qualquer navegador atualizado. Basta logar com as credenciais enviadas.</p>
+            </details>
+            <details class="faq-item">
+              <summary>Posso testar antes?</summary>
+              <p>Chama no WhatsApp que eu envio vídeo demonstrativo ou abro uma chamada rápida para te mostrar as telas.</p>
+            </details>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="px-6 py-2 text-center text-sm text-slate-400">
+    <p>Pronto para alcançar a vaga de ACE em Saquarema? Vamos juntos.</p>
+    <p class="mt-2">© <span id="ano"></span> Bruno Pires • Simulado ACE</p>
+  </footer>
+
+  <a data-whatsapp href="#" class="whatsapp-fab" aria-label="Abrir WhatsApp">
+    <svg viewBox="0 0 32 32" aria-hidden="true" class="h-6 w-6 fill-current">
+      <path d="M16.03 3C9.4 3 4 8.4 4 15.04c0 2.5.7 4.86 2.06 6.92L4 29l7.24-2.05A12.02 12.02 0 0 0 28 15.03C28 8.4 22.66 3 16.03 3Zm7.14 16.27c-.3.84-1.7 1.6-2.36 1.65-.6.05-1.37.07-2.2-.14-.5-.13-1.16-.37-2-.72-3.52-1.52-5.8-5.17-5.97-5.41-.17-.24-1.42-1.9-1.42-3.63 0-1.73.9-2.58 1.23-2.94.33-.36.72-.45.96-.45.24 0 .48.01.69.01.22 0 .52-.08.82.62.3.72 1.01 2.48 1.1 2.66.09.18.15.39.03.63-.12.24-.18.39-.36.6-.18.21-.39.47-.55.63-.18.18-.37.38-.16.75.21.36.92 1.52 1.98 2.46 1.36 1.21 2.5 1.6 2.86 1.78.36.18.57.15.78-.09.21-.24.9-1.05 1.14-1.41.24-.36.48-.3.81-.18.33.12 2.13 1 2.5 1.18.36.18.6.27.69.42.09.15.09.87-.21 1.71Z" />
+    </svg>
+  </a>
+
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11" defer></script>
+  <script src="app.js" type="module" defer></script>
+</body>
+
+</html>
